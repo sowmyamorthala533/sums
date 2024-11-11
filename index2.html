@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     6. Given a bank balance, display "Low Balance" for less than $100, "Healthy" for $100-500, and "High Balance" for over $500.
+// let balance=parseInt(prompt("enter the bankbalance in dollars"))
+// if(balance<100){
+//     console.log("Low Balance")
+// }
+// else if(balance>100 && balance<500){
+//     console.log("Healthy")
+// }
+// else if(balance>500){
+//     console.log("High Balance")
+// }
+// else{
+//     console.log("enter crt balance")
+// }
+
+//7.Flight Price Calculator
+// let Class=prompt("enter the type of class")
+// let ticketCost=parseInt(prompt("enter the price of ticket"))
+// let days=parseInt(prompt("enter the no of days"))
+// if((days-30)>0){
+//      let discount=ticketCost-(ticketCost*0.05)
+//      console.log(discount)
+// }
+// if(Class=="business class"){
+//     discount=ticketCost-(ticketCost*0.1)
+//     console.log(discount)
+// }
+// else if(Class=="premium members"){
+//     discount=ticketCost-(ticketCost*0.15)
+//     console.log(discount)
+// }
+
+// //8.Voting Eligibility
+// let age=+prompt("enter the age")
+// if(age>18){
+//    console.log("eligible to vote")
+// }
+// else{
+//     console.log("not eligible to vote")
+// }
+//9.Shopping Bill Calculation
+
+let array=[]
+
+let items=+prompt("enter the total no of items ")
+
+for(i=1;i<items;i++){
+    let amount=+prompt("enter the amount of each item")
+    array.push(amount)
+}
+let sum=0
+for(i=0;i<array.length;i++){
+    sum+=array[i]
+}console.log(sum)
+
+
+//10.Traffic Light Simulation
+// let colour=prompt("enter the colour like red,green,yellow")
+// if(colour=="red"){
+//     console.log("Stop")
+// }
+// else if(colour=="green"){
+//     console.log("Stop Down")
+// }
+// else if(colour=="yellow"){
+//     console.log("go")
+// }
+// else{
+//     console.log("enter the crt color")
+// }
+
+//LEETCODE QUESTIONS
+//reversing a number
+// let n=parseInt(prompt("enter the number"))
+// let rev=0
+// while(n>0){
+//     let remainder=n%10
+//     rev=(rev*10)+remainder
+//     n=Math.floor(n/10)
+// }console.log(rev)
+
+// Two Sum
+
+
+
+
+    </script>
+</body>
+</html>

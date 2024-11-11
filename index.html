@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// 1.Employee Shift Check
+// let workHour = 23; 
+
+// if (workHour >= 22 || workHour < 6) {
+//     console.log("Night Shift");
+// } else {
+//     console.log("Day Shift");
+// }        
+// 2. Given the temperature in Celsius, provide weather advice: "Cold" for under 10°C, "Moderate" for 10-25°C, and "Hot" for above 25°C.
+// let temperature=parseInt(prompt("enter the tempertaure in celsius"))   
+// if(temperature<10){
+//     console.log("Cold")
+// }
+// else if(temperature>=10 && temperature<25){
+//     console.log("Moderate")
+// }
+// else if(temperature>25){
+//     console.log("Hot")
+// }
+
+
+
+// 3. A store offers discounts: 10% if the bill is above $100, and 20% if it's above $200. Calculate the discount based on the input bill amount.
+// let bill=parseInt(prompt("enter the bill in dollars"))  
+// if(bill>100){
+//     let discount=(bill*0.1)
+//     console.log(discount)
+// }
+// else if(bill>200){
+//     let discount=(bill*0.2)
+//     console.log(discount)
+// }else{
+//     console.log("no discount applicable")
+// }
+
+
+// 4. An elevator has a maximum capacity of 500 kg. Given the weight of items entered, check if the elevator is overloaded.
+// let array=[]
+// let noOfPeople=+prompt("enter the no of persons")
+// for(i=0;i< noOfPeople;i++){
+//     let weights=+prompt(`enter the weight of person ${i}`)
+//     array.push(weights)
+// }
+// let sum=0
+// for(j=0;j<array.length;j++){
+//     sum+=array[j]
+// }
+// if(sum>500){
+//     console.log("elevator is overloaded")
+// }
+// else{
+//     console.log("free to use")
+// }
+
+
+// 5. If a customer orders less than 5 items, print "Invalid order." If 5-10 items, print "Standard order," and for more than 10, print "Bulk order."
+// let items=parseInt(prompt("enter the no of items")) 
+// if(items<5){
+//     console.log("Invalid order")
+// }else if(items>=5 && items<=10){
+//     console.log("Standard order")
+// }else if(items>10){
+//  console.log("Bulk order")
+// }
+// else{
+//     console.log("enter valid items")
+// }
+
+// 6. Given a bank balance, display "Low Balance" for less than $100, "Healthy" for $100-500, and "High Balance" for over $500.
+// let balance=parseInt(prompt("enter the bankbalance in dollars"))
+// if(balance<100){
+//     console.log("Low Balance")
+// }
+// else if(balance>100 && balance<500){
+//     console.log("Healthy")
+// }
+// else if(balance>500){
+//     console.log("High Balance")
+// }
+// else{
+//     console.log("enter crt balance")
+// }
+
+// palindrome code 
+// let n=parseInt(prompt("enter the number"))
+// let rev=0
+// while(n>0){
+//     let remainder=n%10
+//     rev=(rev*10)+remainder
+//     n=Math.floor(n/10)
+// }
+// if(n==rev)
+// {
+//     console.log("palindrome")
+// }else{
+//     console.log("not a palindrome")
+
+// }
+
+
+// 6. Given a bank balance, display "Low Balance" for less than $100, "Healthy" for $100-500, and "High Balance" for over $500.
+// let balance=parseInt(prompt("enter the bankbalance in dollars"))
+// if(balance<100){
+//     console.log("Low Balance")
+// }
+// else if(balance>100 && balance<500){
+//     console.log("Healthy")
+// }
+// else if(balance>500){
+//     console.log("High Balance")
+// }
+// else{
+//     console.log("enter crt balance")
+// }
+
+//7.Flight Price Calculator
+// let Class=prompt("enter the type of class")
+// let ticketCost=parseInt(prompt("enter the price of ticket"))
+// let days=parseInt(prompt("enter the no of days"))
+// if((days-30)>0){
+//      let discount=ticketCost-(ticketCost*0.05)
+//      console.log(discount)
+// }
+// if(Class=="business class"){
+//     discount=ticketCost-(ticketCost*0.1)
+//     console.log(discount)
+// }
+// else if(Class=="premium members"){
+//     discount=ticketCost-(ticketCost*0.15)
+//     console.log(discount)
+// }
+
+// //8.Voting Eligibility
+// let age=+prompt("enter the age")
+// if(age>18){
+//    console.log("eligible to vote")
+// }
+// else{
+//     console.log("not eligible to vote")
+// }
+//9.Shopping Bill Calculation
+
+// let array=[]
+
+// let items=+prompt("enter the total no of items ")
+
+// for(i=1;i<items;i++){
+//     let amount=+prompt("enter the amount of each item")
+//     array.push(amount)
+// }
+// let sum=0
+// for(i=0;i<array.length;i++){
+//     sum+=array[i]
+// }console.log(sum)
+
+
+//10.Traffic Light Simulation
+// let colour=prompt("enter the colour like red,green,yellow")
+// if(colour=="red"){
+//     console.log("Stop")
+// }
+// else if(colour=="green"){
+//     console.log("Stop Down")
+// }
+// else if(colour=="yellow"){
+//     console.log("go")
+// }
+// else{
+//     console.log("enter the crt color")
+// }
+
+//LEETCODE QUESTIONS
+//reversing a number
+// let n=parseInt(prompt("enter the number"))
+// let rev=0
+// while(n>0){
+//     let remainder=n%10
+//     rev=(rev*10)+remainder
+//     n=Math.floor(n/10)
+// }console.log(rev)
+
+
+
+
+//1.Electricity Bill Calculation
+    // let units=+prompt("enter the no of units in kWh")
+    // if(units>0&& units<=100){
+    //     price=units*0.10
+    //     console.log(price)
+    // }
+    // else if(units>100 && units<=200){
+    //     price=100*0.10+(units-100)*0.15
+    //     console.log(price)
+    // }
+    // else if(units>200){
+    //     price=100*0.10+100*0.15+(units-200)*0.20
+    //     console.log(price)
+    // }
+
+    //2.Calculate Weekly Wages
+    // let hours=+prompt("enter the no of hrs")
+    // if(hours>40){
+    //   let amount=1.5*hours
+    //   console.log(amount)
+    // }
+    // else{
+    //   console.log("no amount paid")
+    // }
+
+    //3.Student Grades Calculation
+    // let arr=[]
+    // for(i=0;i<3;i++){
+    //   let marks=+prompt("enter the marks")
+    //    arr.push(marks)
+    // } let sum=0
+    // for(j=0;j<arr.length;j++){
+    // sum+=arr[j]
+      
+    // }console.log(sum)
+    // let average=Math.floor(sum/arr.length)
+    // console.log(average)
+    // if(average>7){
+    //   console.log("A")
+    // }
+    // else if(average>=5){
+    //   console.log("B")
+    // }
+    // else if(average<5){
+    //   console.log("C")
+    // }
+
+    //4.Warehouse Stock Update
+    // let stock=+prompt("enter the no of units")
+    // if(stock==0){
+    //   console.log("Out of Stock")}
+    // else if(stock<10){
+    //   console.log("Out of Stock")
+    // }
+    // else if(stock>=10){
+    //   console.log("InStock")
+    // }
+
+    //5.Game Score Tracker
+    // let arr=[]
+    // for(i=0;i<3;i++){
+    //   let points=+prompt("enter the no of points")
+    //   arr.push(points)
+    // }let sum=0
+    // for(j=0;j<arr.length;j++){
+    //    sum+=arr[j]
+    // }console.log(sum)
+    // if(sum>=100 && sum<500){
+    //   console.log("You reaches 100 milestones")
+    // }
+    // else if(sum>=500 && sum<1000)
+    // {
+    //   console.log("You reaches 500 milestones")
+    // }
+    // else if(sum>=1000){
+    //   console.log("You reaches 1000 milestones")
+    // }else{
+    //   console.log("no mile stone")
+    // }
+
+     //1.Classroom Seating Arrangement
+        // function SeatingArrangement(numberofstudents,seats){
+        //     if(numberofstudents%seats==0){
+        //     let rows=Math.floor(numberofstudents/seats)
+        //     return rows
+        //     }
+        //     else{
+        //         let rows=Math.floor(numberofstudents/seats)+1
+        //         return rows
+        //     }
+        // }
+        // let  numberofstudents=+prompt("enter the no of students")
+        // let  seats=+prompt("enter the no of seats per row")
+        // console.log(SeatingArrangement(numberofstudents,seats))
+
+
+
+        //2.Tax Calculation
+    //     function TaxCalculation(income){
+    //    if(income<=50000){
+    //     let tax=income*0.1
+    //     return tax
+    //    }
+    //    else if(income>50000 && income<=100000){
+    //      tax=income*0.2
+    //      return tax
+    //    }
+    //    else if(income>1000000){
+    //     tax=income*0.3
+    //     return tax
+    //    }
+    //    else{
+    //     return " enter crt income"
+    //    }
+    //     }
+    //     let income=+prompt("enter the income in dollars")
+    //     console.log(TaxCalculation(income))
+
+
+
+    //3.Employee Bonus Calculation
+    //   function EmployeeBonusCalculation(years){
+    //      if(years<=5 && years<=10){
+    //         return "5percent"
+    //      }
+    //      else if(years<=10 && years<=20){
+    //         return "10percent"
+    //      }
+    //      else if(years>20){
+    //         return "20percent"
+    //      }
+    //      else{
+    //         return "enter crt input"
+    //      }
+    //   }
+    //   let years=+prompt("enter the no of years")
+    //   console.log(EmployeeBonusCalculation(years))
+
+
+
+    //4.Fuel Efficiency Check
+//     function fuelused(fuel,distance){
+//        let usage=Math.floor(distance/fuel)
+//        return usage
+//     }
+//    let fuel=+prompt("enter the used fuel in liters")
+//    let distance=Number(prompt("enter the distance travelled"))
+//    console.log(fuelused(fuel,distance))
+
+
+
+  //5.Internet Usage Alert
+//   function datalimit(){
+//     if(data>=80 && data<100){
+//         return "you have reached a 80percent of data usage"
+//     }
+//     else if(data==100){
+//         return "you have reached the maximum limit"
+//     }
+//   }
+//   let data=+(prompt("enter the data used in percentage"))
+//   console.log(datalimit(data))
+
+
+
+//leetcode  . Length of Last Word
+// function LengthofLastWord(string){
+//     let count=0
+//     let flag=false
+//     for(i=string.length-1;i>=0;i--){
+//         if((string[i]>="a" && string[i]<="z") || (string[i]<="A" || string[i]>="Z")){
+//             flag=true
+//             count++
+//         }
+//         else{
+//             if(flag==true)
+//             return count
+//         }
+//     }
+//     return count
+// }
+// let string=prompt("enter a sting")
+// console.log(LengthofLastWord(string))
+
+
+ //1.Calculate Train Fare
+    // function TrainFare(classoftravel,distance){
+    //    if(classoftravel.toLowerCase()==="economy"){
+    //     let rate=0.5
+    //     let price=rate*distance
+    //     return price
+    //    }
+    //    else if(classoftravel.toLowerCase()==="business"){
+    //     let rate=0.6
+    //     let price=rate*distance
+    //     return price
+    //    }
+    //    else{
+    //     return "invalid"
+    //    }
+    // }
+    // let classoftravel=prompt("ente the class of travel either economy nor business")
+    // let distance=+prompt("enter the distance in kms")
+    // console.log(TrainFare(classoftravel,distance))
+      
+
+
+
+        //2.Calculate Train Fare
+    //     function income(Income,creditscore){
+    //         if(Income>30000&& creditscore>100){
+    //             return "qualify for a loan"
+    //         }
+    //         else {
+    //             return "not qualify for a loan"
+    //         }
+    //     }
+    // let Income=+prompt("enter the income")
+    // let creditscore=+prompt("enter the credit score")
+    // console.log(income(Income, creditscore))
+
+   
+   
+   
+    //3.Movie Ticket Price Calculation
+    // function Movie(Category,price){
+    //  if(Category==="students"){
+    //       price=price-price*0.1
+    //        return price
+    //  }
+    //  else if(Category==="seniors"){
+     
+    //  price=price-price*0.2
+    //        return price
+    //  }
+    //  else {
+    //     return "Invalid category";
+    // }
+    // }
+    // let Category=prompt("enter either students or seniors")
+    // let price=parseInt(prompt("enter the number"))
+    // console.log(Movie(Category,price))
+
+    
+    //4.Game Level Up
+//     function Points(){
+//         if(points>=1000){
+//         return "enough points to level up 1000 points"
+//     }
+//        else{
+//         return  "not enough points to level up 1000 points"
+//     }
+//     }
+// let points=+prompt("enter the no of points")
+// console.log(Points(points))
+
+
+
+//5.Fuel Cost Estimation
+// function FuelCostEstimation(){
+//      const  fuelNeeded=distance / efficiency
+//      const totalCost=fuelNeeded*fuelrate
+//      return totalCost
+// }
+    
+//  let distance=+prompt("enter the distance to be travelled in kms")   
+//  let efficiency=+prompt("enter the efficiency")   
+//  let fuelrate=+prompt("enter the fuelrate")  
+//  console.log(FuelCostEstimation(distance,efficiency,fuelrate))
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
